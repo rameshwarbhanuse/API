@@ -33,6 +33,7 @@ public class Basics {
 					+ "\r\n"
 					+ "").when().post("maps/api/place/add/json")
 			.then().log().all() .statusCode(200).body("scope", equalTo("APP")).header("server", "Apache/2.4.41 (Ubuntu)");
+			//hello second commit
 	}
 
 }
